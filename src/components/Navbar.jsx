@@ -14,7 +14,7 @@ export default function Navbar() {
     return (
         <div className="flex items-center justify-between h-16 px-4"
         style={{background: scrollY > 50 ? 'rgba(10,10,10,0.98)': 'rgba(10,10,10,0.85)'}}>
-            <div className="text-4xl font-bold font-syne text-white">Nova
+            <div className="text-4xl font-syne text-white">Nova
             <span className="text-[#c8f135]">Folio</span>
             </div>
 
