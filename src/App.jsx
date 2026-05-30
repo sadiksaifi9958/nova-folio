@@ -1,9 +1,10 @@
+import Home from "../src/Pages/Home.jsx"
 import {ThemeProvider} from "./context/ThemeContext.jsx";
 
 function App() {
   return (
       <ThemeProvider>
-        <div>novafolio</div>
+        <Home/>
       </ThemeProvider>
 
   )

@@ -1,3 +1,4 @@
+import React from "react"
 import {createContext, useContext, useState} from "react"
 
 export const ThemeContext = React.createContext()
@@ -10,7 +11,7 @@ export const ThemeProvider = ({children}) => {
     }
 
     return (
-        <ThemeContext.Provider value={theme, toggleTheme}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             {children}
         </ThemeContext.Provider>
     )

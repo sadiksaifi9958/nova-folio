@@ -12,23 +12,31 @@ export default function Navbar() {
     const {theme, toggleTheme} = useTheme()
 
     return (
-        <div className="flex items-center justify-between h-16"
+        <div className="flex items-center justify-between h-16 px-4"
         style={{background: scrollY > 50 ? 'rgba(10,10,10,0.98)': 'rgba(10,10,10,0.85)'}}>
-            <div className="text-4xl font-bold font-syne">Nova
+            <div className="text-4xl font-bold font-syne text-white">Nova
             <span className="text-[#c8f135]">Folio</span>
             </div>
 
 
             <div className="flex gap-4 items-center">
                 {pages.map((link) => {
-                    <a
-                        key={link}
-                        className="text-md font-semibold"
-                        href={`#${link.toLowerCase()}`}
-                    >{link}</a>
+                    return (
+                        <a
+                            key={link}
+                            className="text-white text-md font-semibold"
+                            href={`#${link.toLowerCase()}`}
+                        >{link}</a>
+                    )
                 })}
-                <button onClick={toggleTheme}>{theme === "dark"? <FiSun/> : <FiMoon/> }</button>
-                <button onClick={()=>setMenu(!menu)}>{menu? <HiMenu/> : <HiX/> }</button>
+                <button
+                    onClick={toggleTheme}
+                    className="text-white text-2xl"
+                >{theme === "dark"? <FiSun/> : <FiMoon/> }</button>
+                <button
+                    onClick={()=>setMenu(!menu)}
+                    className="text-white text-2xl"
+                >{menu? <HiMenu/> : <HiX/> }</button>
             </div>
         </div>
     )

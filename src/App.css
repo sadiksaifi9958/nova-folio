@@ -1,16 +1,15 @@
 
-
 .font-syne {
            font-family: "Syne", sans-serif;
            font-optical-sizing: auto;
-           font-weight: <weight>;
+           font-weight: 400;
            font-style: normal;
-       }
+}
 
 
 .font-dm-sans {
               font-family: "DM Sans", sans-serif;
               font-optical-sizing: auto;
-              font-weight: <weight>;
+              font-weight: 400;
               font-style: normal;
-          }
+}
