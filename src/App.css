@@ -1,0 +1,16 @@
+
+
+.font-syne {
+           font-family: "Syne", sans-serif;
+           font-optical-sizing: auto;
+           font-weight: <weight>;
+           font-style: normal;
+       }
+
+
+.font-dm-sans {
+              font-family: "DM Sans", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: <weight>;
+              font-style: normal;
+          }
