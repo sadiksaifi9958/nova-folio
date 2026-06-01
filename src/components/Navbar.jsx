@@ -31,11 +31,11 @@ export default function Navbar() {
                 })}
                 <button
                     onClick={toggleTheme}
-                    className="text-white text-2xl"
+                    className="text-white text-2xl cursor-pointer"
                 >{theme === "dark"? <FiSun/> : <FiMoon/> }</button>
                 <button
                     onClick={()=>setMenu(!menu)}
-                    className="text-white text-2xl"
+                    className="text-white text-2xl cursor-pointer"
                 >{menu? <HiMenu/> : <HiX/> }</button>
             </div>
         </div>
