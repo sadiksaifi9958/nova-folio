@@ -1,7 +1,7 @@
-const projects = [
+const projectsData = [
     {
         number: 01,
-        title: "Nation Wants To Guess"
+        title: "Nation Wants To Guess",
         desc: "A Quiz Game - Inspired by the comedy quiz show 'Nation Wants To Guess' by comedian Gursimran Khamba, available on YouTube. All questions are based on the show.",
         tags: ["React", "Vite", "Tailwind CSS v4", "Framer Motion", "REST API"],
         githubURL: "https://github.com/sadiksaifi9958/nation-wants-to-guess",
@@ -13,8 +13,8 @@ const projects = [
     {
         number: 02,
         title: "NovaTech",
-        shortDesc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting."
-        tags: ["HTML5", "CSS3", "Vanilla" "JavaScript", "Font Awesome"],
+        desc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting.",
+        tags: ["HTML5", "CSS3", "Vanilla", "JavaScript", "Font Awesome"],
         githubURL: "https://github.com/sadiksaifi9958/NovaTech",
         liveURL: "https://sadiksaifi9958.github.io/NovaTech/",
         summary: "NovaTech is a production-quality, multi-page business website for a fictional tech agency, built entirely from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no libraries beyond Font Awesome icons. The project was built to deeply understand how real websites work under the hood, before reaching for abstractions.\n" +
@@ -23,4 +23,6 @@ const projects = [
             "With 248 commits in the repository, NovaTech reflects a real iterative development process — built and refined feature by feature over multiple sessions, not assembled all at once."
     }
 ]
+
+export default projectsData
 
