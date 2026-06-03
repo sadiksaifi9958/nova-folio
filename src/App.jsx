@@ -1,12 +1,20 @@
-import Home from "../src/Pages/Home.jsx"
+import Home from "./Pages/Home.jsx"
 import {ThemeProvider} from "./context/ThemeContext.jsx";
-import "../src/App.css"
+import "./App.css"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ProjectsPage from "./Pages/ProjectsPage.jsx";
 
 function App() {
   return (
       <ThemeProvider>
-        <Home/>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/projects" element={<ProjectsPage/>} />
+              </Routes>
+          </BrowserRouter>
       </ThemeProvider>
+
 
   )
 }
