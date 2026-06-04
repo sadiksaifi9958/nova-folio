@@ -8,7 +8,7 @@ import Footer from "../components/Footer.jsx"
 
 const Home = () => {
     return (
-        <div className="bg-[#0a0a0a] min-h-screen">
+        <div className="bg-[#0a0a0a] min-h-screen overflow-x-clip">
             <Navbar/>
             <Hero/>
             <About/>

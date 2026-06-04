@@ -19,7 +19,7 @@ function Skills() {
         }
     ]
     return (
-        <div className="max-w-4xl mx-auto px-8 py-24">
+        <div className="max-w-4xl mx-auto px-8 py-24" id="skills">
             <div className="text-xs text-[#c8f135] tracking-[3px] uppercase mb-4">Skills</div>
             <h1 className="text-5xl font-syne text-white mb-12 leading-tight">What I work with.</h1>
             <div className="flex flex-col gap-8">

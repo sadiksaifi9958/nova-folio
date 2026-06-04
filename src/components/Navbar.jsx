@@ -12,32 +12,53 @@ export default function Navbar() {
     const {theme, toggleTheme} = useTheme()
 
     return (
-        <div className="flex items-center justify-between h-16 px-4"
-        style={{background: scrollY > 50 ? 'rgba(10,10,10,0.98)': 'rgba(10,10,10,0.85)'}}>
-            <div className="text-4xl font-syne text-white">Nova
-            <span className="text-[#c8f135]">Folio</span>
-            </div>
+        <nav className="sticky top-0 z-50 border-b border-[#1a1a1a]"
+             style={{
+                 background: scrollY > 50 ? '#0a0a0a' : 'transparent',
+                 borderBottom: scrollY > 50 ? '0.5px solid #222' : 'none',
+                 backdropFilter: 'blur(10px)'
+             }}>
+            <div className="flex items-center justify-between h-16 md:h-20 px-6 md:px-12">
+                <div className="text-2xl md:text-4xl font-syne text-white">Nova
+                    <span className="text-[#c8f135]">Folio</span>
+                </div>
 
 
-            <div className="flex gap-4 items-center">
-                {pages.map((link) => {
-                    return (
-                        <a
-                            key={link}
-                            className="text-white text-md font-semibold"
-                            href={`#${link.toLowerCase()}`}
-                        >{link}</a>
-                    )
-                })}
+                <div className=" gap-8 items-center hidden md:flex">
+                    {pages.map((link) => {
+                        return (
+                            <a
+                                key={link}
+                                className="text-white text-md font-semibold hover:text-[#c8f135] transition-colors"
+                                href={`#${link.toLowerCase()}`}
+                            >{link}</a>
+                        )
+                    })}
+                </div>
                 <button
                     onClick={toggleTheme}
                     className="text-white text-2xl cursor-pointer"
                 >{theme === "dark"? <FiSun/> : <FiMoon/> }</button>
                 <button
                     onClick={()=>setMenu(!menu)}
-                    className="text-white text-2xl cursor-pointer"
+                    className="text-white text-2xl cursor-pointer md:hidden"
                 >{menu? <HiMenu/> : <HiX/> }</button>
             </div>
-        </div>
+            {
+                !menu && <div className="flex flex-col gap-4 px-4 pb-4 pt-2 bg-[#0a0a0a] border-t border-[#222] md:hidden">
+                    {pages.map((link) => {
+                        return (
+                            <a
+                                key={link}
+                                className="text-white text-md font-semibold hover:text-[#c8f135] transition-colors"
+                                onClick={()=>setMenu(false)}
+                                href={`#${link.toLowerCase()}`}
+                            >{link}</a>
+                        )
+                    })}
+                </div>
+            }
+        </nav>
+
     )
 }

@@ -16,7 +16,7 @@ function ProjectCard({project, detailed}) {
             <div className="text-sm text-gray-500 mb-5 leading-relaxed">{project.desc}</div>
             <hr className="border-[#222] my-4" />
             {
-                detailed ?
+                detailed &&
                     <div>
                     <h1 className="text-xs text-[#c8f135] tracking-[2px] uppercase mb-2">Overview</h1>
                     {!expanded ?
@@ -36,13 +36,12 @@ function ProjectCard({project, detailed}) {
                             >Read less</button>
                         </div>}
                     </div>
-                    : null
             }
                         <div className="flex flex-wrap gap-2 mb-5">
                 {
                     project.tags.map((tag) =>(
                         <span className="text-xs px-3 py-1 rounded-full bg-[#1a1a1a] border border-[#333] text-gray-500 mt-4"
-                        key={project.number}>{tag}</span>
+                        key={tag}>{tag}</span>
                     ))
                 }
             </div>
