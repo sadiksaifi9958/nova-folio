@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Projects from "../data/ProjectsData.js";
+import Projects from "../constants/ProjectsData.js";
 import ProjectCard from "../components/ProjectCard.jsx";
 import { FaArrowLeftLong } from "react-icons/fa6";
 

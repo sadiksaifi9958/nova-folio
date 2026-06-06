@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard.jsx";
-import ProjectsData from "../data/ProjectsData.js";
+import ProjectsData from "../constants/ProjectsData.js";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 
