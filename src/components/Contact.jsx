@@ -11,9 +11,19 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const { theme } = useTheme();
+  const [error, setError] = useState("");
 
   function handleSubmit() {
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      setError("please fill in all fields");
+      return;
+    }
+    if (!email.includes("@") || !email.includes(".com")) {
+      setError("Please enter a valid email");
+      return;
+    }
     setSubmitted(true);
+    setError("");
   }
 
   return (
@@ -47,10 +57,11 @@ function Contact() {
             <textarea
               placeholder="Your message"
               rows={5}
-              className={` border rounded-xl px-4 py-3  text-sm outline-none focus:border-[#c8f135] focus:outline-none ${theme === "dark" ? "bg-[#0a0a0a] border-[#333] text-white" : "bg-[#e5e5e5] border-[#d1d5db] text-gray-800 "}`}
+              className={`border rounded-xl px-4 py-3 text-sm outline-none focus:border-[#c8f135] focus:outline-none ${theme === "dark" ? "bg-[#0a0a0a] border-[#333] text-white" : "bg-[#e5e5e5] border-[#d1d5db] text-gray-800 placeholder:text-gray-400"}`}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
+            {error && <p className="text-red-500 text-sm">{error}</p>}
             <button
               className="bg-[#c8f135] text-black font-semibold px-8 py-3 rounded-full text-sm w-fit mx-auto"
               onClick={handleSubmit}
