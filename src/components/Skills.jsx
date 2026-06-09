@@ -5,7 +5,7 @@ import { useTheme } from "../context/ThemeContext";
 function Skills() {
   const { theme } = useTheme();
   return (
-    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-40" id="skills">
+    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-30" id="skills">
       <div className="text-xs text-[#c8f135] tracking-[3px] uppercase mb-4">
         Skills
       </div>

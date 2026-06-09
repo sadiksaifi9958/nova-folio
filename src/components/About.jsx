@@ -2,7 +2,7 @@ import { useTheme } from "../context/ThemeContext";
 function About() {
   const { theme } = useTheme();
   return (
-    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-40" id="about">
+    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-17" id="about">
       <div className="text-xs text-[#c8f135] mb-4 font-dm-sans tracking-[3px]">
         ABOUT
       </div>

@@ -65,12 +65,14 @@ export default function Navbar() {
         </button>
       </div>
       {menu && (
-        <div className="absolute left-0 right-0 flex flex-col gap-4 px-4 pb-4 pt-2 bg-[#0a0a0a] border-t border-[#222] md:hidden">
+        <div
+          className={`absolute left-0 right-0 flex flex-col gap-4 px-4 pb-4 pt-2 border-t  md:hidden ${theme === "dark" ? "bg-[#0a0a0a] border-[#222]" : "bg-[#ffffff] border-gray-300"}`}
+        >
           {pages.map((link) => {
             return (
               <a
                 key={link}
-                className="text-white text-md font-semibold hover:text-[#c8f135] transition-colors"
+                className={`text-md font-semibold hover:text-[#c8f135] transition-colors ${theme === "dark" ? "text-white" : "text-gray-800"}`}
                 onClick={() => setTimeout(() => setMenu(false), 100)}
                 href={`#${link.toLowerCase()}`}
               >

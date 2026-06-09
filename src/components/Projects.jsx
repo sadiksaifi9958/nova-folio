@@ -7,7 +7,7 @@ import { useTheme } from "../context/ThemeContext";
 function Projects() {
   const { theme } = useTheme();
   return (
-    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-40" id="projects">
+    <div className="max-w-4xl mx-auto px-8 py-24 scroll-m-20" id="projects">
       <div className="text-xs text-[#c8f135] tracking-[3px] uppercase mb-4">
         Projects
       </div>
