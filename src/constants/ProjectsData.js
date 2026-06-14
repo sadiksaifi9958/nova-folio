@@ -17,7 +17,7 @@ const projectsData = [
     desc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting.",
     tags: ["HTML5", "CSS3", "Vanilla", "JavaScript", "Font Awesome"],
     githubURL: "https://github.com/sadiksaifi9958/NovaTech",
-    liveURL: "https://sadiksaifi9958.github.io/NovaTech/",
+    liveURL: "https://sadiksaifi9958.github.io/nova-tech/",
     summary:
       "NovaTech is a production-quality, multi-page business website for a fictional tech agency, built entirely from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no libraries beyond Font Awesome icons. The project was built to deeply understand how real websites work under the hood, before reaching for abstractions.\n" +
       "The site spans five pages — Home, About, Pricing, Contact, and three Policy sub-pages — all sharing a consistent design system built with CSS Custom Properties (variables) for unified theming. A dark/light mode toggle switches the entire site's theme and saves the user's preference to localStorage so it persists across sessions. Navigation includes active link highlighting that automatically reflects the current page, and a hamburger menu for mobile that opens and closes smoothly via DOM manipulation.\n" +
