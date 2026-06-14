@@ -16,7 +16,7 @@ const projectsData = [
     title: "NovaTech",
     desc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting.",
     tags: ["HTML5", "CSS3", "Vanilla", "JavaScript", "Font Awesome"],
-    githubURL: "https://github.com/sadiksaifi9958/NovaTech",
+    githubURL: "https://github.com/sadiksaifi9958/nova-tech",
     liveURL: "https://sadiksaifi9958.github.io/nova-tech/",
     summary:
       "NovaTech is a production-quality, multi-page business website for a fictional tech agency, built entirely from scratch using vanilla HTML, CSS, and JavaScript — no frameworks, no libraries beyond Font Awesome icons. The project was built to deeply understand how real websites work under the hood, before reaching for abstractions.\n" +
