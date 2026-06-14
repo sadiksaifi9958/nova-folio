@@ -4,7 +4,7 @@ const projectsData = [
     title: "Nation Wants To Guess",
     desc: "A Quiz Game - Inspired by the comedy quiz show 'Nation Wants To Guess' by comedian Gursimran Khamba, available on YouTube. All questions are based on the show.",
     tags: ["React", "Vite", "Tailwind CSS v4", "Framer Motion", "REST API"],
-    githubURL: "https://github.com/sadiksaifi9958/nation-wants-to-guess",
+    githubURL: "https://github.com/sadiksaifi9958/nova-quiz",
     liveURL: "https://nwtg-quiz.vercel.app/",
     summary:
       "QuizHappens is a fully interactive, single-page quiz web application built with React, inspired by the comedy quiz show Nation Wants To Guess by Gursimran Khamba. The app fetches questions in real time from a live REST API (nwtg-api.onrender.com) that serves a curated bank of 107 questions extracted from the show's YouTube transcripts, making every game session feel fresh and dynamic.\n" +
