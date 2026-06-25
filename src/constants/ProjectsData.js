@@ -1,6 +1,19 @@
 const projectsData = [
   {
     number: 1,
+    title: "BrightRoots",
+    desc: "A gamified quiz-based learning platform built for rural Class 6–8 students in India, covering Math, EVS, GK, and Digital Literacy — built solo in 72 hours for the ATH Hackathon 0.1, using React, React Router, Context API, and Tailwind CSS.",
+    tags: ["React", "React Router DOM", "Context API", "Tailwind CSS", "Vite", "React Icons", "Framer Motion"],
+    githubURL: "https://github.com/sadiksaifi9958/brightroots",
+    liveURL: "https://brightroots-learning.vercel.app/",
+    summary:
+      "BrightRoots is a gamified learning platform built to address a real-world problem: students in rural India often lack access to engaging, interactive digital education — most existing ed-tech platforms are too complex, too data-heavy, or simply not designed with low-end devices and rural learners in mind. BrightRoots tackles this by turning core academic learning into a lightweight, motivating quiz experience for Class 6–8 students \n" +
+      "The platform covers four subjects — Math, Environmental Science (EVS), General Knowledge, and Digital Literacy — each with 10 questions, instant post-answer explanations, and a saffron/teal color theme chosen for warmth and readability. Every question runs on a 30-second timer with a visual countdown, and answer options are randomized on each attempt to prevent rote memorization. \n" +
+      "What sets BrightRoots apart is its gamification layer: students earn XP (score × 10) after every quiz, unlock achievement badges (First Star, On Fire, Champion, Genius) based on performance, and track subject-wise progress. All state — selected subject, score, XP, and answers — is managed through React Context API, avoiding prop drilling across the Home → Subjects → Quiz → Result flow handled by React Router with dynamic routes like /quiz/:subject.\n" +
+      "The app was fully responsive from the start using Tailwind breakpoints, with Framer Motion animations layered in after submission. Built and shipped solo in 72 hours under hackathon time pressure.",
+  },
+  {
+    number: 2,
     title: "Nation Wants To Guess",
     desc: "A Quiz Game - Inspired by the comedy quiz show 'Nation Wants To Guess' by comedian Gursimran Khamba, available on YouTube. All questions are based on the show.",
     tags: ["React", "Vite", "Tailwind CSS v4", "Framer Motion", "REST API"],
@@ -12,7 +25,7 @@ const projectsData = [
       "On the technical side, the project demonstrates several key frontend skills: consuming a live REST API using fetch, managing multi-layered state across components with React hooks (useState, useEffect), implementing a countdown timer with setInterval, and handling error states gracefully with a retry option. The app is fully responsive across all screen sizes and was deployed to Vercel with a CI/CD pipeline configured via GitHub Actions, automating the build and deployment workflow on every push to main.",
   },
   {
-    number: 2,
+    number: 3,
     title: "NovaTech",
     desc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting.",
     tags: ["HTML5", "CSS3", "Vanilla", "JavaScript", "Font Awesome"],
