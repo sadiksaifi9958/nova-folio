@@ -22,7 +22,7 @@ const ProjectsPage = () => {
         >
           <FaArrowLeftLong /> Back To Home
         </Link>
-        <h1 className="text-4xl md:text-5xl font-syne text-white mb-12 leading-tight">
+        <h1 className={`text-4xl md:text-5xl font-syne mb-12 leading-tight ${theme === "dark" ? "text-white" : "text-gray-800"}`}>
           All Projects
         </h1>
         <div className="flex flex-col gap-12">
