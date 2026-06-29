@@ -1,6 +1,19 @@
 const projectsData = [
   {
     number: 1,
+    title: "NovaDash",
+    desc: "A modern, fully responsive admin dashboard demonstrating complete frontend architecture — authentication flow, protected routing, dual state-management strategy, async data fetching with caching, and dark mode — built end-to-end with React and shadcn/ui.",
+    tags: ["react", "vite", "tailwindcss", "shadcn-ui", "react-router", "tanstack-query", "zustand", "context-api", "recharts", "admin-dashboard", "frontend", "state-management", "protected-routes", "dark-mode", "javascript"],
+    githubURL: "https://github.com/sadiksaifi9958/nova-dash",
+    liveURL: "https://nova-dash-app.vercel.app/",
+    summary:
+      "NovaDash is a frontend-only admin dashboard built to demonstrate production-grade React architecture and patterns used in real SaaS dashboards. It includes a full authentication flow with persisted sessions in localStorage, and protected routing via a dedicated ProtectedRoute component that gates access to authenticated pages before any protected content renders. \n" +
+      "The dashboard ships with six routes — Login, Dashboard (stat cards + revenue chart), Analytics (traffic trends via Recharts), Users (a sortable data table with status badges), Settings, and Profile — all code-split with React.lazy and Suspense to reduce initial bundle size. \n" +
+      "The most deliberate architectural decision in the project is its dual state-management approach: Context API + useReducer handles slow-changing, app-wide state like auth and theme, while Zustand handles fast-changing UI state like sidebar toggling — avoiding unnecessary re-renders across the component tree. Server-state concerns (loading, caching, simulated async fetches) are handled with TanStack React Query, and the whole UI is styled on a customized shadcn/ui Zinc theme with Tailwind CSS v4. \n" +  
+      "Dark mode is implemented without a flash-of-incorrect-theme on load — the saved preference is read and applied via an inline script in index.html before React even mounts. The project intentionally uses simulated/mocked data (no real backend) to keep the focus on frontend patterns: data fetching, loading states, form validation, and caching behavior.",
+  },
+  {
+    number: 2,
     title: "BrightRoots",
     desc: "A gamified quiz-based learning platform built for rural Class 6–8 students in India, covering Math, EVS, GK, and Digital Literacy — built solo in 72 hours for the ATH Hackathon 0.1, using React, React Router, Context API, and Tailwind CSS.",
     tags: ["React", "React Router DOM", "Context API", "Tailwind CSS", "Vite", "React Icons", "Framer Motion"],
@@ -13,7 +26,7 @@ const projectsData = [
       "The app was fully responsive from the start using Tailwind breakpoints, with Framer Motion animations layered in after submission. Built and shipped solo in 72 hours under hackathon time pressure.",
   },
   {
-    number: 2,
+    number: 3,
     title: "Nation Wants To Guess",
     desc: "A Quiz Game - Inspired by the comedy quiz show 'Nation Wants To Guess' by comedian Gursimran Khamba, available on YouTube. All questions are based on the show.",
     tags: ["React", "Vite", "Tailwind CSS v4", "Framer Motion", "REST API"],
@@ -25,7 +38,7 @@ const projectsData = [
       "On the technical side, the project demonstrates several key frontend skills: consuming a live REST API using fetch, managing multi-layered state across components with React hooks (useState, useEffect), implementing a countdown timer with setInterval, and handling error states gracefully with a retry option. The app is fully responsive across all screen sizes and was deployed to Vercel with a CI/CD pipeline configured via GitHub Actions, automating the build and deployment workflow on every push to main.",
   },
   {
-    number: 3,
+    number: 4,
     title: "NovaTech",
     desc: "A multi-page agency website with scroll animations, modal contact form, dark/light mode toggle, and active nav highlighting.",
     tags: ["HTML5", "CSS3", "Vanilla", "JavaScript", "Font Awesome"],
