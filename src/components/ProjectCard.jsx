@@ -48,7 +48,7 @@ function ProjectCard({ project, detailed }) {
                 {project.summary}
               </div>
               <button
-                className="text-xs text-[#c8f135] mt-1 cursor-pointer"
+                className="text-xs text-[#c8f135] mt-1 cursor-pointer hover:underline"
                 onClick={() => setExpanded(!expanded)}
               >
                 Read more
